@@ -1,0 +1,60 @@
+body {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.5em;
+}
+
+header {
+	background-image: url('../images/footer_lodyas.png');
+	color: white;
+}
+
+header h3 {
+	margin-top: 0px;
+	padding-top: 75px;
+}
+
+.avatar {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	background: url('../images/bryan_avatar.jpg') center no-repeat;
+	background-size: 120%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	margin: 0 auto;
+}
+
+.tagline {
+	padding-top: 15px;
+}
+
+.social {
+	font-size: 2em;
+}
+
+.twitter, .github, .instagram {
+	display: inline-block;
+	padding: .5em;
+}
+
+.content {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.tools-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tool {
+	border: 2px solid;
+	margin: 1em;
+	padding: .5em;
+	min-width: 100px;
+}
+
+.heading, .tagline, .social {
+	visiblitiy: hidden;
+}
