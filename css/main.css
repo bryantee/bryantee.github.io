@@ -13,6 +13,10 @@ header a:visited {
 	color: white;
 }
 
+header a:link {
+	color: white;
+}
+
 header h3 {
 	margin-top: 0px;
 	padding-top: 50px;
