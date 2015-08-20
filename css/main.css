@@ -9,9 +9,13 @@ header {
 	color: white;
 }
 
+header a:visited {
+	color: white;
+}
+
 header h3 {
 	margin-top: 0px;
-	padding-top: 75px;
+	padding-top: 50px;
 }
 
 .avatar {
