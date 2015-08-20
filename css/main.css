@@ -26,6 +26,20 @@ header h3 {
 
 .tagline {
 	padding-top: 15px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1044px) {
+	.tagline {
+		max-width: 65%;
+	}
+} 
+
+@media screen and (min-width: 1375px) {
+	.tagline {
+		max-width: 50%;
+	}
 }
 
 .social {
