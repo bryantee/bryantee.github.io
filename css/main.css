@@ -89,6 +89,13 @@ header h3 {
 	min-width: 25%;
 }
 
+@media screen and (max-width: 440px) {
+	.tool {
+		min-width: 90%;
+	}
+}
+
+
 .heading, .tagline, .social {
 	visiblitiy: hidden;
 }
