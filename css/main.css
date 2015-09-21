@@ -95,6 +95,15 @@ header h3 {
 	}
 }
 
+.strava-header {
+	display: inline-block;
+	margin: 0 3.5em 0 3.5em;
+}
+
+.strava-header h4 {
+	margin-bottom: -25px;
+	
+}
 
 .heading, .tagline, .social {
 	visiblitiy: hidden;

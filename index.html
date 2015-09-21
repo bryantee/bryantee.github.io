@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/countUp.js"></script>
 </head>
 <body>
 
@@ -39,15 +40,33 @@
 			<div class="tool">Django</div>
 		</div>
 	</div>
-	<div class="contact content">
+
+	<!--Strava API Test / Final Area -->
+
+	<div class="content grey-box">
+		<p>I'm an avid cyclist too. Here's the reponse from an AJAX request to the Strava API v3. All numbers shown are year-to-date and real time. Each time the pages is laoded a new request is made and the JSON response is rendered:</p>
+		<a style="display:inline-block;background-color:#FC4C02;color:#fff;padding:5px 10px 5px 30px;font-size:15px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('http://badges.strava.com/logo-strava-echelon.png')" href='http://strava.com/athletes/3076072/badge' target="_clean">
+			Follow me on
+  			<img src='http://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=17 width=53 />
+  		</a>
+	</div>
+	<div id='strava-area'>
+		<div class="miles strava-header">
+			<h4>Distance</h3>
+			<h2 id='miles'></h3>
+		</div>
+		<div class="elevation strava-header">
+			<h4>Elevation</h3>
+			<h2 id='elevation'></h3>
+		</div>
+	</div>
+
+	<!-- End Strava section -->
+
+  <div class="contact content">
 		<p class="grey-box">
 		I love coffee and beer. Wanna grab one? Shoot me an <a href="mailto: bryantee@gmail.com">Email</a>.
 		</p>
-	</div>
-
-	<!--Strava API Test / Final Area -->
-	<div>
-		
 	</div>
 </main>
 
