@@ -29,7 +29,7 @@
 
 <main>
 	<div class="intro content">
-		<p class="intro-sentence grey-box">My projects span from basic static and dynamic websites like Squarespace and Wordpress to full stack interactive web applications.</p>
+		<p class="intro-sentence grey-box">My projects span from static websites to dynamic full stack interactive web applications.</p>
 		<h3>The Tools I Use To Create</h3>
 		<div class="tools-container">
 			<div class="tool">HTML5/CSS3</div>
@@ -42,23 +42,27 @@
 	</div>
 
 	<!--Strava API Test / Final Area -->
+	<div id='strava-area'>
 
-	<div class="content grey-box">
-		<p>I'm an avid cyclist too. Here's the reponse from an AJAX request to the Strava API v3. All numbers shown are year-to-date and real time. Each time the pages is laoded a new request is made and the JSON response is rendered:</p>
-		<a style="display:inline-block;background-color:#FC4C02;color:#fff;padding:5px 10px 5px 30px;font-size:15px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('http://badges.strava.com/logo-strava-echelon.png')" href='http://strava.com/athletes/3076072/badge' target="_clean">
+		<img src="images/strava.png" alt="" class="strava-logo"> <br/>
+
+		<div class="miles strava-header">
+			<h4>Distance</h4>
+			<h2 id='miles'></h2>
+		</div>
+		<div class="elevation strava-header">
+			<h4>Elevation</h4>
+			<h2 id='elevation'></h2>
+		</div>
+		<br/>
+		<a class="follow-me" style="display:inline-block;background-color:#FC4C02;color:#fff;padding:5px 10px 5px 30px;font-size:15px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('http://badges.strava.com/logo-strava-echelon.png')" href='http://strava.com/athletes/3076072/badge' target="_clean">
 			Follow me on
   			<img src='http://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=17 width=53 />
   		</a>
 	</div>
-	<div id='strava-area'>
-		<div class="miles strava-header">
-			<h4>Distance</h3>
-			<h2 id='miles'></h3>
-		</div>
-		<div class="elevation strava-header">
-			<h4>Elevation</h3>
-			<h2 id='elevation'></h3>
-		</div>
+
+	<div class="content">
+		<p class="grey-box">I'm an avid cyclist too. Above is the reponse from an AJAX request to the Strava API v3. All numbers shown are year-to-date and real time. Each time the pages is laoded a new request is made and the JSON response is rendered.</p>
 	</div>
 
 	<!-- End Strava section -->

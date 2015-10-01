@@ -95,16 +95,46 @@ header h3 {
 	}
 }
 
+#strava-area {
+	background-color: black;
+	margin-top: 2em;
+}
+
+.strava-logo {
+	margin: 1.5em;
+	width: 80%;
+}
+
+@media screen and (min-width: 650px) {
+	.strava-logo {
+		max-width: 40%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.strava-logo {
+		max-width: 500px;
+	}
+}
+
 .strava-header {
 	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	color: white;
 	margin: 0 3.5em 0 3.5em;
 }
 
 .strava-header h4 {
+	margin-top: 0;
 	margin-bottom: -25px;
-	
+}
+
+.follow-me {
+	margin: 2em;
 }
 
 .heading, .tagline, .social {
 	visiblitiy: hidden;
 }
+
+
