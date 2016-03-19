@@ -7,26 +7,26 @@ $(document).ready(function() {
 });
 
 function appendStrava(miles, elevation) {
-	miles = Number(miles).toLocaleString('en');
-	elevation = Number(elevation).toLocaleString('en');
+	var miles = Number(miles).toLocaleString('en');
+	var elevation = Number(elevation).toLocaleString('en');
 
-	$('#miles').append(miles + ' mi')
-	$('#elevation').append(elevation + ' ft');
+	// $('#miles').append(miles + ' mi')
+	// $('#elevation').append(elevation + ' ft');
 
 	// countUp.js attempt
 
-/*	var options = {
+	var options = {
 		useEasing: true,
 		seperator: ',',
 		prefix: '',
 		suffix: ''
 	};
 
-	var stravaMiles = new CountUp("#miles", 0, 20, 0, 4);
-	var stravalElevation = new CountUp("#elevation", 0, 15, 0, 4);
+	var stravaMiles = new CountUp("miles", 0, miles, 0, 4, options);
+	var stravalElevation = new CountUp("elevation", 0, elevation, 0, 4, options);
 
 	stravaMiles.start();
-	stravalElevation.start();	*/
+	stravalElevation.start();	
 
 
 
