@@ -2,7 +2,12 @@ $(document).ready(function() {
 	$('.heading, .tagline, .social').delay(500).css('display', 'visibility').hide().delay(100).fadeIn('slow');
 
 	// Make call to strava and set YTD info as variable
-	getStrava();
+	var waypoint = new Waypoint({
+		element: document.getElementById('strava-area'),
+		handler: function() {
+			getStrava();
+		}
+	});
 
 });
 
