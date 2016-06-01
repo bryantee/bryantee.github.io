@@ -2,14 +2,20 @@ $(document).ready(function() {
 	//$('.heading, .tagline, .social').delay(500).css('display', 'visibility').hide().delay(100).fadeIn('slow');
 
 	// Make call to strava and set YTD info as variable
+	getStrava();
+
+	// Append and setup scroll to task
 	var waypoint = new Waypoint({
 		element: document.getElementById('strava-area'),
 		handler: function() {
-			getStrava();
+			appendStrava(totalMiles, totalElevation);
 		}
 	});
 
 });
+
+var totalMiles = 0;
+var totalElevation = 0;
 
 function appendStrava(miles, elevation) {
 	var miles = Number(miles).toLocaleString('en');
@@ -43,8 +49,7 @@ function getStrava() {
 		rideTotals = data.ytd_ride_totals;
 		totalMiles = parseInt(rideTotals.distance * 0.000621371);
 	 	totalElevation = parseInt(rideTotals.elevation_gain * 3.28084);
-	 	//append to dom, call function
-	 	appendStrava(totalMiles, totalElevation);
+	 	
 	});
 
 }
