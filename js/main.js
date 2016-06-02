@@ -7,9 +7,13 @@ $(document).ready(function() {
 	// Append and setup scroll to task
 	var waypoint = new Waypoint({
 		element: document.getElementById('strava-area'),
-		handler: function() {
-			appendStrava(totalMiles, totalElevation);
-		}
+		handler: function(direction) {
+			if (direction == 'down') {
+				console.log('waypoint scroll is down.')
+				appendStrava(totalMiles, totalElevation);
+			}
+		},
+		offset: 'bottom-in-view'
 	});
 
 });
@@ -37,7 +41,7 @@ function appendStrava(miles, elevation) {
 	var stravalElevation = new CountUp("elevation", 0, elevation, 0, 4, options);
 
 	stravaMiles.start();
-	stravalElevation.start();	
+	stravalElevation.start();
 
 
 
@@ -49,7 +53,7 @@ function getStrava() {
 		rideTotals = data.ytd_ride_totals;
 		totalMiles = parseInt(rideTotals.distance * 0.000621371);
 	 	totalElevation = parseInt(rideTotals.elevation_gain * 3.28084);
-	 	
+
 	});
 
 }
