@@ -13,11 +13,11 @@ a {
 	color: #7bd4c4;
 }
 
-.fa:hover {
+.fab:hover {
 	color: #7bd4c4;
 }
 
-.fa {
+.fab {
 	transition: .25s ease;
 }
 
@@ -45,8 +45,8 @@ header h3 {
 	width: 300px;
 	height: 300px;
 	border-radius: 150px;
-	background: url('../images/bryan_cat.jpg') center no-repeat;
-	background-size: 100%;
+	background: url('../images/bryan.png') center no-repeat;
+	background-size: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	margin: 0 auto;
 	transition: .5s ease;
@@ -57,7 +57,7 @@ header h3 {
 }
 
 .tagline {
-	padding-top: 15px;
+	padding-top: 25px;
 	max-width: 85%;
 	margin: 0 auto;
 }
@@ -78,7 +78,7 @@ header h3 {
 	font-size: 2em;
 }
 
-.twitter, .github, .instagram {
+.twitter, .github, .linkedin {
 	display: inline-block;
 	padding: .5em;
 }
@@ -117,48 +117,6 @@ header h3 {
 	}
 }
 
-#strava-area {
-	background-color: black;
-	margin-top: 2em;
-}
-
-.strava-logo {
-	margin: 1.5em;
-	width: 80%;
-}
-
-@media screen and (min-width: 650px) {
-	.strava-logo {
-		max-width: 40%;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.strava-logo {
-		max-width: 500px;
-	}
-}
-
-.strava-header {
-	display: inline-block;
-	font-family: Helvetica, Arial, sans-serif;
-	color: white;
-	margin: 0 3.5em 0 3.5em;
-}
-
-.stats-heading {
-	margin-top: 0;
-	margin-bottom: -25px;
-}
-
-.units {
-	margin-top: -25px;
-}
-
 .follow-me {
 	margin: 2em;
-}
-
-.heading, .tagline, .social {
-	visiblitiy: hidden;
 }
