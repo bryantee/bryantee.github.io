@@ -21,6 +21,11 @@ a {
 	transition: .25s ease;
 }
 
+.fab.fa-twitter:hover {
+  color: tomato;
+  transform: rotate(180deg)
+}
+
 .tool:hover {
 	background-color: #7bd4c4;
 	color: white;
