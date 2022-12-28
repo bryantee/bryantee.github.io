@@ -78,7 +78,7 @@ header h3 {
 	font-size: 2em;
 }
 
-.twitter, .github, .linkedin {
+.twitter, .mastodon, .github, .linkedin {
 	display: inline-block;
 	padding: .5em;
 }
